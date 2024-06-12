@@ -1,0 +1,174 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.Todo_App{
+  width: 350px;
+  height: 100%;
+  background: hsl(284, 90%, 4%);
+  box-shadow: 0 0 2px hsl(10, 34, 04);
+  padding: 10px 5px ;
+  border-radius: 5px;
+}
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+}
+.inputs {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputs input{
+  width: 78%;
+  padding: 4px;
+  border: 1px solid hsla(0, 0%, 0%, 0.169);
+}
+.inputs input:focus {
+  outline: none;
+  border: 1px solid hsla(0, 0%, 0%, 0.169);
+}
+
+.Tasks{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 0;
+  gap: 5px;
+}
+.task{
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task p{
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+  font-weight: 500;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+}
+.Todo_App button{
+  cursor: pointer;
+  padding: 6px 8px;
+  border: none;
+  background: hsl(9, 81%, 56%);
+  color: hsl(0, 0%, 100%);
+  font-size: 11px;
+}
+.inputs button{
+  background: hsl(128, 89%, 65%);
+  color: hsl(0, 0%, 8%);
+}
+.task button:nth-child(1){
+  padding: 5px 8px;
+}
+.task button:nth-child(2),
+.task button:nth-child(3){
+  cursor: pointer;
+  padding: 2px 10px;
+  border: none;
+  background: hsl(60, 96%, 91%);
+}
+.task button img{
+  width: 14px;
+}
+
+
+@media screen and (min-width: 376px){
+  .Todo_App{
+    width: 377px;
+  }
+  h1{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  .inputs input{
+    width: 75%;
+    padding: 8px 4px;
+  }
+  .Todo_App button{
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  .buttons{
+    gap: 4px;
+  }
+  .task button:nth-child(1){
+    padding: 5px 8px;
+  }
+  .task button:nth-child(2),
+  .task button:nth-child(3){
+    padding: 2px 10px;
+  }
+}
+@media screen and (min-width: 420px){
+  .Todo_App{
+    width: 420px;
+  }
+}
+@media screen and (min-width: 476px){
+  .Todo_App{
+    width: 470px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 15px;
+  }
+  .inputs input{
+    width: 80%;
+    padding: 8px 4px;
+  }
+  .Todo_App button{
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .buttons{
+    gap: 4px;
+  }
+  .task button:nth-child(1){
+    padding: 5px 10px;
+  }
+  .task button:nth-child(2),
+  .task button:nth-child(3){
+    padding: 2px 12px;
+  }
+}
+
+
+@media screen and (min-width: 576px){
+  .Todo_App{
+    width: 500px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 15px;
+  }
+}
